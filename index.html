@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+#fullscreen-logo {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    opacity: 1.5;
+    transition: opacity 3s;
+}
+</style>
+<body onload="document.getElementById('fullscreen-logo').style.opacity='0'">
+<img id="fullscreen-logo" src="https://sun1-88.userapi.com/C7_SwRkrt2VNTPjUS7hWE4hD0Ia18s8d3YFW1g/3ncaHw7TQ6M.jpg">
+
+<!-- Header -->
+<div class="header">
+  <h1>Сайт для лизочки</h1>
+  <p>Кокетливый сайт для лизочки.</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="https://sun9-77.userapi.com/impg/10zR2OR3nDNbTZBViZdOLZ7kv5jyFzMhS61sCQ/eZIC0UbaJOc.jpg?size=2560x1678&quality=95&sign=a5759d9daea86f0e276aac8ffe6f9244&type=album" style="width:100%">
+    <img src="https://sun9-79.userapi.com/impg/-JAYuoUDwdhlAElQpfRYZusqGgsoDx9Q5OFujw/FvIxKq-45X0.jpg?size=2037x2160&quality=95&sign=de0e513029be2e5bbda7050af05012cd&type=album" style="width:100%">
+    <img src="https://sun9-18.userapi.com/impg/EWU0y1N1isYzPBskK9tz1VAaIQoiETdj734ziw/7V4IDG_uduk.jpg?size=1905x2160&quality=95&sign=2550f5d3bc69d49cbb053b860233d6a6&type=album" style="width:100%">
+    <img src="https://sun9-19.userapi.com/impg/fabK2hXU8D3pGFJLEIKp_kXR_6xbR0x8ouvMLQ/kWL5pUh6UXk.jpg?size=1728x2160&quality=95&sign=fe7e961885eec09bea1947d9600c2031&type=album" style="width:100%">
+    <img src="https://sun9-17.userapi.com/impg/suDvbiuA9Pl9QzJT81R_sKA9KOsxq1q741ZzyQ/PI2ubqnH4r0.jpg?size=1620x2160&quality=95&sign=ba65935764a5151892be5955b8e0d544&type=album" style="width:100%">
+    <img src="https://sun9-42.userapi.com/impg/Uk8HvVeEifcgPiW46yq2vDz8sacJEYZCb3B4vg/g0j_OjqphAk.jpg?size=2098x2160&quality=95&sign=2fdc98df5a890274ac04b3d747428e27&type=album" style="width:100%">
+    <img src="https://sun9-19.userapi.com/impg/fabK2hXU8D3pGFJLEIKp_kXR_6xbR0x8ouvMLQ/kWL5pUh6UXk.jpg?size=1728x2160&quality=95&sign=fe7e961885eec09bea1947d9600c2031&type=album" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://sun9-65.userapi.com/impg/OXM3f6KHtm5mzbiIwPI0dc4QZzsJ2vNsHQfZFA/stK-pYq_bj0.jpg?size=2120x2160&quality=95&sign=5cd0d5741ff974b0f0efed57e156d60a&type=album" style="width:100%">
+    <img src="https://sun9-64.userapi.com/impg/Mx47gK3X_R-aXzqODHEDiml3qyue-chScVlNaw/tKiiDqomqEo.jpg?size=1896x2160&quality=95&sign=f773ea806486f1b0cfb799ca5134aa85&type=album" style="width:100%">
+    <img src="https://sun9-77.userapi.com/impg/10zR2OR3nDNbTZBViZdOLZ7kv5jyFzMhS61sCQ/eZIC0UbaJOc.jpg?size=2560x1678&quality=95&sign=a5759d9daea86f0e276aac8ffe6f9244&type=album" style="width:100%">
+    <img src="https://sun9-65.userapi.com/impg/toNNWpdUuDGYilZ8fCM_moPUiSEHrVCi2zSz9g/JVBTpMbeJvg.jpg?size=1851x2160&quality=95&sign=a653d3f21bb5329a76d05f48676aa2a8&type=album" style="width:100%">
+    <img src="https://sun9-79.userapi.com/impg/-JAYuoUDwdhlAElQpfRYZusqGgsoDx9Q5OFujw/FvIxKq-45X0.jpg?size=2037x2160&quality=95&sign=de0e513029be2e5bbda7050af05012cd&type=album" style="width:100%">
+    <img src="https://sun9-65.userapi.com/impg/OXM3f6KHtm5mzbiIwPI0dc4QZzsJ2vNsHQfZFA/stK-pYq_bj0.jpg?size=2120x2160&quality=95&sign=5cd0d5741ff974b0f0efed57e156d60a&type=album" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="https://sun9-77.userapi.com/impg/10zR2OR3nDNbTZBViZdOLZ7kv5jyFzMhS61sCQ/eZIC0UbaJOc.jpg?size=2560x1678&quality=95&sign=a5759d9daea86f0e276aac8ffe6f9244&type=album" style="width:100%">
+    <img src="https://sun9-79.userapi.com/impg/-JAYuoUDwdhlAElQpfRYZusqGgsoDx9Q5OFujw/FvIxKq-45X0.jpg?size=2037x2160&quality=95&sign=de0e513029be2e5bbda7050af05012cd&type=album" style="width:100%">
+    <img src="https://sun9-18.userapi.com/impg/EWU0y1N1isYzPBskK9tz1VAaIQoiETdj734ziw/7V4IDG_uduk.jpg?size=1905x2160&quality=95&sign=2550f5d3bc69d49cbb053b860233d6a6&type=album" style="width:100%">
+    <img src="https://sun9-19.userapi.com/impg/fabK2hXU8D3pGFJLEIKp_kXR_6xbR0x8ouvMLQ/kWL5pUh6UXk.jpg?size=1728x2160&quality=95&sign=fe7e961885eec09bea1947d9600c2031&type=album" style="width:100%">
+    <img src="https://sun9-17.userapi.com/impg/suDvbiuA9Pl9QzJT81R_sKA9KOsxq1q741ZzyQ/PI2ubqnH4r0.jpg?size=1620x2160&quality=95&sign=ba65935764a5151892be5955b8e0d544&type=album" style="width:100%">
+    <img src="https://sun9-42.userapi.com/impg/Uk8HvVeEifcgPiW46yq2vDz8sacJEYZCb3B4vg/g0j_OjqphAk.jpg?size=2098x2160&quality=95&sign=2fdc98df5a890274ac04b3d747428e27&type=album" style="width:100%">
+    <img src="https://sun9-19.userapi.com/impg/fabK2hXU8D3pGFJLEIKp_kXR_6xbR0x8ouvMLQ/kWL5pUh6UXk.jpg?size=1728x2160&quality=95&sign=fe7e961885eec09bea1947d9600c2031&type=album" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://sun9-65.userapi.com/impg/OXM3f6KHtm5mzbiIwPI0dc4QZzsJ2vNsHQfZFA/stK-pYq_bj0.jpg?size=2120x2160&quality=95&sign=5cd0d5741ff974b0f0efed57e156d60a&type=album" style="width:100%">
+    <img src="https://sun9-64.userapi.com/impg/Mx47gK3X_R-aXzqODHEDiml3qyue-chScVlNaw/tKiiDqomqEo.jpg?size=1896x2160&quality=95&sign=f773ea806486f1b0cfb799ca5134aa85&type=album" style="width:100%">
+    <img src="https://sun9-77.userapi.com/impg/10zR2OR3nDNbTZBViZdOLZ7kv5jyFzMhS61sCQ/eZIC0UbaJOc.jpg?size=2560x1678&quality=95&sign=a5759d9daea86f0e276aac8ffe6f9244&type=album" style="width:100%">
+    <img src="https://sun9-65.userapi.com/impg/toNNWpdUuDGYilZ8fCM_moPUiSEHrVCi2zSz9g/JVBTpMbeJvg.jpg?size=1851x2160&quality=95&sign=a653d3f21bb5329a76d05f48676aa2a8&type=album" style="width:100%">
+    <img src="https://sun9-79.userapi.com/impg/-JAYuoUDwdhlAElQpfRYZusqGgsoDx9Q5OFujw/FvIxKq-45X0.jpg?size=2037x2160&quality=95&sign=de0e513029be2e5bbda7050af05012cd&type=album" style="width:100%">
+    <img src="https://sun9-65.userapi.com/impg/OXM3f6KHtm5mzbiIwPI0dc4QZzsJ2vNsHQfZFA/stK-pYq_bj0.jpg?size=2120x2160&quality=95&sign=5cd0d5741ff974b0f0efed57e156d60a&type=album" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>
